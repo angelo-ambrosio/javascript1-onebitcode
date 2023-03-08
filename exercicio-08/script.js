@@ -13,7 +13,7 @@
 
 // -------- RESOLUÇÃO COM ARRAYS ---------
 
-alert('Seja bem-vindo ao CADASTRO DE IMÓVEIS!\n\nSiga as instruções com atenção.')
+/*alert('Seja bem-vindo ao CADASTRO DE IMÓVEIS!\n\nSiga as instruções com atenção.')
 
 let numeroImoveis = []
 let imovel = []
@@ -81,13 +81,13 @@ while (true) {
         mostraMenu();
     }
 }
-
+*/
 
 
 // ------------------ RESOLUÇÃO COM OBJETOS ---------------
 
 
-/*
+
 alert('Seja bem-vindo ao CADASTRO DE IMÓVEIS!\n\n Siga as instruções atentamente.')
 
 let listaImoveis = [];
@@ -115,15 +115,15 @@ function adicionaImovel () {
     listaImoveis.push(imovel);
 }
 
-//preciso saber como conseguir acessar uma propriedade de um objeto que está dentro de um array.
 function mostraImovel(){
     for (i = 0; i < listaImoveis.length; i++){
-        opcao2 += 'Imóvel ' + (i + 1) + ':\n' + 
-        '  - Nome: ' + listaImoveis[i]['nome'] + '\n' +
-        '  - Quartos: ' + listaImoveis[i]['quartos'] + '\n' +
-        '  - Banheiros: ' + listaImoveis[i]['banheiros'] + '\n' +
-        '  - Garagem: ' + listaImoveis[i]['garagem'] + '\n'
+        opcao2 += '\nImóvel ' + (i + 1) + ':\n' + 
+        '  - Nome: ' + listaImoveis[i].nome + '\n' +
+        '  - Quartos: ' + listaImoveis[i].quartos + '\n' +
+        '  - Banheiros: ' + listaImoveis[i].banheiros + '\n' +
+        '  - Garagem: ' + listaImoveis[i].garagem + '\n'
     }
+    alert(opcao2);
 }
 
 while(true) {
@@ -147,4 +147,3 @@ while(true) {
         mostraMenu();
     }
 }
-*/
